@@ -54,6 +54,8 @@ func FuzzyQuery(query map[string]interface{}, mappings *meta.Mappings, analyzers
 					value.PrefixLength, _ = zutils.ToFloat64(v)
 				case "boost":
 					value.Boost, _ = zutils.ToFloat64(v)
+				case "frequency":
+					value.Frequency, _ = zutils.ToInt(v)
 				default:
 					// return nil, errors.New(errors.ErrorTypeParsingException, fmt.Sprintf("[fuzzy] unknown field [%s]", k))
 				}

@@ -236,6 +236,7 @@ type FuzzyQuery struct {
 	Fuzziness    interface{} `json:"fuzziness,omitempty"` // auto, 1,2,3,n
 	PrefixLength float64     `json:"prefix_length,omitempty"`
 	Boost        float64     `json:"boost,omitempty"`
+	Frequency    int         `json:"frequency,omitempty"`
 }
 
 // PrefixQuery
