@@ -16,6 +16,8 @@
 package tokenizer
 
 import (
+	"strings"
+
 	"github.com/blugelabs/bluge/analysis"
 	"github.com/go-ego/gse"
 
@@ -57,6 +59,7 @@ func (t *SearchTokenizer) Tokenize(input []byte) analysis.TokenStream {
 
 		result = append(result, &analysis.Token{
 			Term:         []byte(token.Text),
+			Frequency:    strings.Count(text, token.Text),
 			Start:        token.Start,
 			End:          token.End,
 			PositionIncr: positionIncr,
