@@ -16,8 +16,6 @@
 package tokenizer
 
 import (
-	"bytes"
-
 	"github.com/blugelabs/bluge/analysis"
 	"github.com/go-ego/gse"
 )
@@ -47,12 +45,13 @@ func (t *StandardTokenizer) Tokenize(input []byte) analysis.TokenStream {
 		}
 		result = append(result, &analysis.Token{
 			Term:         []byte(seg.Token().Text()),
-			Frequency:    bytes.Count(input, []byte(seg.Token().Text())),
 			Start:        seg.Start(),
 			End:          seg.End(),
 			PositionIncr: 1,
 			Type:         typ,
 		})
 	}
+
+	result.Frequency()
 	return result
 }
