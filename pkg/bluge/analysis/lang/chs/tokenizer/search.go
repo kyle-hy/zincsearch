@@ -63,5 +63,6 @@ func (t *SearchTokenizer) Tokenize(input []byte) analysis.TokenStream {
 			Type:         typ,
 		})
 	}
+	result.Frequency()
 	return result
 }

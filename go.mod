@@ -1,6 +1,13 @@
 module github.com/zincsearch/zincsearch
 
-go 1.20
+go 1.24.3
+
+replace (
+	// github.com/blugelabs/bluge => github.com/zincsearch/bluge v1.1.5
+	github.com/blugelabs/bluge => ../bluge
+	github.com/blugelabs/bluge_segment_api => github.com/zincsearch/bluge_segment_api v1.0.0
+	github.com/blugelabs/ice => github.com/zincsearch/ice v1.1.3
+)
 
 require (
 	github.com/blugelabs/bluge v0.1.9
@@ -128,10 +135,4 @@ require (
 	google.golang.org/grpc v1.59.0 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-)
-
-replace (
-	github.com/blugelabs/bluge => github.com/zincsearch/bluge v1.1.5
-	github.com/blugelabs/bluge_segment_api => github.com/zincsearch/bluge_segment_api v1.0.0
-	github.com/blugelabs/ice => github.com/zincsearch/ice v1.1.3
 )

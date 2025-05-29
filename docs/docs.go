@@ -2595,6 +2595,9 @@ const docTemplate = `{
                 "boost": {
                     "type": "number"
                 },
+                "frequency": {
+                    "type": "integer"
+                },
                 "fuzziness": {
                     "description": "auto, 1,2,3,n"
                 },
