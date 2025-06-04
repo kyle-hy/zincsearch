@@ -3,7 +3,7 @@ module github.com/zincsearch/zincsearch
 go 1.24.3
 
 replace (
-	github.com/blugelabs/bluge => github.com/kyle-hy/bluge v1.0.1
+	github.com/blugelabs/bluge => github.com/kyle-hy/bluge v1.0.2
 	github.com/blugelabs/bluge_segment_api => github.com/zincsearch/bluge_segment_api v1.0.0
 	github.com/blugelabs/ice => github.com/zincsearch/ice v1.1.3
 	github.com/bytedance/sonic => github.com/bytedance/sonic v1.13.2
@@ -125,9 +125,8 @@ require (
 	go.etcd.io/etcd/api/v3 v3.5.10 // indirect
 	go.etcd.io/etcd/client/pkg/v3 v3.5.10 // indirect
 	go.opencensus.io v0.22.5 // indirect
-	go.uber.org/atomic v1.7.0 // indirect
-	go.uber.org/multierr v1.6.0 // indirect
-	go.uber.org/zap v1.17.0 // indirect
+	go.uber.org/multierr v1.10.0 // indirect
+	go.uber.org/zap v1.27.0 // indirect
 	golang.org/x/arch v0.3.0 // indirect
 	golang.org/x/net v0.30.0 // indirect
 	golang.org/x/sys v0.33.0 // indirect

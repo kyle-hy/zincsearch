@@ -26,6 +26,8 @@ __debug_bin
 main
 dist/
 tmp/
+sftp.json
+log
 
 # plugins
 /plugins
