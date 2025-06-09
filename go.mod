@@ -3,7 +3,7 @@ module github.com/zincsearch/zincsearch
 go 1.24.3
 
 replace (
-	github.com/blugelabs/bluge => github.com/kyle-hy/bluge v1.0.2
+	github.com/blugelabs/bluge => github.com/kyle-hy/bluge v1.0.3
 	github.com/blugelabs/bluge_segment_api => github.com/zincsearch/bluge_segment_api v1.0.0
 	github.com/blugelabs/ice => github.com/zincsearch/ice v1.1.3
 	github.com/bytedance/sonic => github.com/bytedance/sonic v1.13.2
@@ -20,7 +20,7 @@ require (
 	github.com/gin-contrib/cors v1.4.0
 	github.com/gin-contrib/pprof v1.4.0
 	github.com/gin-gonic/gin v1.9.1
-	github.com/go-ego/gse v0.80.2
+	github.com/go-ego/gse v0.80.3
 	github.com/goccy/go-json v0.10.2
 	github.com/grafana/pyroscope-go v1.2.0
 	github.com/joho/godotenv v1.4.0
@@ -120,7 +120,7 @@ require (
 	github.com/tklauser/numcpus v0.6.1 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.2.11 // indirect
-	github.com/vcaesar/cedar v0.20.1 // indirect
+	github.com/vcaesar/cedar v0.20.2 // indirect
 	github.com/yusufpapurcu/wmi v1.2.3 // indirect
 	go.etcd.io/etcd/api/v3 v3.5.10 // indirect
 	go.etcd.io/etcd/client/pkg/v3 v3.5.10 // indirect
